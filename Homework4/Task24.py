@@ -14,4 +14,25 @@
 # 4 -> 1 2 3 4
 # 9
 
+# !!!!! Скажу честно я не смог сообразить как решать ее самому... Затупил жестко. 
+# Поэтому привожу решение. но это уже после того как я посмотрел разбор с ребятами.
+# И я понял логику. и вроде даже примерно понял как кодом это писать самому.
+
+# Ответ
+import random
+amount_bush=int(input('Введите число кустов: '))
+garden_list=[random.randint(1,20) for _ in range(amount_bush)]
+print(f'Ягод на кустах: {garden_list}')
+max_sum=0
+for number_bush in range(amount_bush):
+    if number_bush==1:
+        max_berries=garden_list[-1]+sum(garden_list[:2])
+    elif number_bush==amount_bush:
+        max_berries=sum(garden_list[amount_bush-2:])+garden_list[0]
+    else:
+        max_berries=sum(garden_list[number_bush-2:number_bush+1])
+    if max_berries>max_sum:
+        max_sum=max_berries
+print(f'Максимальное число ягод за один подход к кусту: {max_sum}')
+
 
