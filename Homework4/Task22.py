@@ -8,6 +8,7 @@
 # 3 6 9 12 15 18
 # 6 12
 
+# Решение: самое короткое через операции с множествами - пересечение. ну и сортировка.
 import random
 my_list_1=[random.randint(1,20) for _ in range(20)]
 my_list_2=[random.randint(1,20) for _ in range(20)]
