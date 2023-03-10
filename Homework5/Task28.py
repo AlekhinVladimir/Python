@@ -4,3 +4,12 @@
 # Также нельзя использовать циклы.
 # 2 2
 # 4
+
+a=int(input('Введите число А: '))
+b=int(input('Введите число B: '))
+def summ(a, b):
+    if b > 0:
+        return summ(a+1, b-1)
+    else:
+        return (a)
+print(f'Сумма чисел {a} и {b} равна {summ(a,b)}.')
