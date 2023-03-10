@@ -9,7 +9,10 @@ b=int(input('Введите число B: '))
 def degr(a,b):
     if (b==1):
         return (a)
+    if (b==0):
+        return (1)
     else:
         return(a*degr(a,b-1))
 # print(degr(a,b))   
 print(f'Результат возведения числа {a} в степень {b} равен {degr(a,b)}.')
+# но если делать в минус степени. то я хз как, не соображу.
