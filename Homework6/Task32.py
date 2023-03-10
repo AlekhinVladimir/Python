@@ -13,3 +13,7 @@ b=int(input('Введите максимальное значение диапа
 length_massive=int(input('Введите длину массива:'))
 my_list=[random.randint(-20,20) for _ in range(length_massive)]
 print(my_list)
+my_list_1=[]
+for i in range(len(my_list)):
+    if a <= my_list[i] <= b:
+        
