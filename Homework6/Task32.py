@@ -16,5 +16,4 @@ print(my_list)
 my_list_1=[]
 for i in range(len(my_list)):
     if a <= my_list[i] <= b:
-        
-      
+       print(i, end= ',')   
