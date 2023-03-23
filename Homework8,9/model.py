@@ -1,5 +1,5 @@
 phone_book = []
-path = 'phone.txt'
+path = 'Homework8,9\Phone.txt'
 save_index = None
 
 
